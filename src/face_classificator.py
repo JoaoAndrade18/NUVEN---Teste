@@ -28,6 +28,11 @@ def create_csv_file(face_coordinates):
 def detect_faces_haar(img_path):
     img = cv2.imread(img_path)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    
+    # Essa função vai permitir detectar faces em diferentes escalas 
+    # por isso precisa de um valor de escala e um valor de vizinhos
+    # é necessario varios testes com valores diferentes para encontrar
+    # o melhor valor para o caso necessario
     faces = face_cascade.detectMultiScale(gray, 1.04, 7, minSize=(30, 30))
 
     for (x, y, w, h) in faces:
