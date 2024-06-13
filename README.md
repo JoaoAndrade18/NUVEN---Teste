@@ -17,18 +17,21 @@ Você pode instalar as bibliotecas necessárias usando o comando:
 pip install opencv-python pandas scikit-learn 
 ```
 
-Estrutura do Projeto
-
-├── Images
-│   ├── chupeta
-│   ├── roendo_unha
-│   └── dedo_na_boca
-├── src
-│   └── main.py
-└── README.md
+O python utilizado foi o 3.10.11.
 
 # Para executar o projeto clone o repositorio e divirta-se:
 ```bash
 git clone https://github.com/JoaoAndrade18/NUVEN---Teste.git
 ```
+Após baixar o repositorio, crie seu ambiente virtual(opcional), entretanto tenha cuidado com as versões utilizadas. 
 
+Em seguida instale as dependencias com:
+```bash
+pip install -r requirements.txt
+```
+
+Com isso, descompacte o arquivo DATASET.rar, (utlize o metodo de sua preferencia), certifique-se que o nome da pasta seja DATASET e que tenha 3 pastas dentro dela.
+
+Caso queira mudar algo no dirwetorio das imagens em DATASET ou o nome em si, modifique o arquivo face_classificator.py
+
+O arquivo split_train serve para separar as imagens que seram utilizadas para treino e teste, com proporção 8:1 respectivamente, podendo ser modificado no mesmo.
