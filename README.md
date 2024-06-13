@@ -27,7 +27,7 @@ Estrutura do Projeto
 │   └── main.py
 └── README.md
 
-Para executar o projeto clone o repositorio e divirta-se:
+# Para executar o projeto clone o repositorio e divirta-se:
 ```bash
 git clone https://github.com/JoaoAndrade18/NUVEN---Teste.git
 ```
