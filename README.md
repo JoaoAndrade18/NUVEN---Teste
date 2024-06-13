@@ -9,7 +9,7 @@ Certifique-se de ter o Python instalado. As bibliotecas necessárias são:
 - OpenCV
 - pandas
 - scikit-learn
-- venv (Opcional)
+- virtualenv (Opcional)
 
 Você pode instalar as bibliotecas necessárias usando o comando:
 
