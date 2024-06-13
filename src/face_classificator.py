@@ -4,6 +4,7 @@
 import cv2
 import os 
 import pandas as pd 
+from define_labels_face import *
 
 # Carregar o classificador Haar Cascade default para faces do OpenCV
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades 
@@ -39,10 +40,14 @@ def detect_faces_haar(img_path):
         # desenhar retangulos ao redor das faces
         cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
 
+        print(img_path)
+
         # armazenar coordenadas das faces
         face_coordinates.append({
             'image_path': img_path,
-            'ROI-x1y1x2y2': f"{x},{y},{x+w},{y+h}"
+            'ROI-x1y1x2y2': f"{x},{y},{x+w},{y+h}",
+            'ROI Caption': roi_caption(img_path),
+            'Image Caption': image_caption(img_path)
         })
 
     # retornar a imagem com as faces detectadas

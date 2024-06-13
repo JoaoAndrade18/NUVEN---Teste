@@ -14,7 +14,7 @@ def split_train_test():
     X = df['image_path']
 
     # Y = teste
-    Y = df['ROI-x1y1x2y2'] # pode ser qualquer coluna que
+    Y = df['ROI Caption'] # pode ser qualquer coluna que
     # demonstre a classe do objeto
 
     # Dividir em 80% treino e 20% teste

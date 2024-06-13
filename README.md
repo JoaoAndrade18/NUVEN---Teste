@@ -32,6 +32,6 @@ pip install -r requirements.txt
 
 Com isso, descompacte o arquivo `DATASET.rar`, (utilize o método de sua preferência), certifique-se que o nome da pasta seja DATASET e que tenha 3 pastas dentro dela.
 
-Caso queira mudar algo no dirwetorio das imagens em `DATASET` ou o nome em si, modifique o arquivo `face_classificator.py`
+Caso queira mudar algo no diretório das imagens em `DATASET` ou o nome em si, modifique o arquivo `face_classificator.py`
 
-O arquivo `split_train_test.py` serve para separar as imagens que seram utilizadas para treino e teste, com proporção 8:1 respectivamente, podendo ser modificado no mesmo.
+O arquivo `split_train_test.py` serve para separar as imagens que serão utilizadas para treino e teste, com proporção 8:1 respectivamente, podendo ser modificado no mesmo.
