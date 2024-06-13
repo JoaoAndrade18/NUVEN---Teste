@@ -1,0 +1,8 @@
+por a img3 do grupo chupeta ser bem pequena, 
+precisa acertar os paremetros de deteco de bordas,
+para isso, o fator de scala precisa ser baixo para 
+que seja aceito diversos tamanhos de bordas,
+entratanto, o fator de scala não pode ser muito baixo,
+pois irá apresentar diversos falsos positivos.
+e com isso, o numero de vizinhos precisa ser alto 
+para que a deteco seja mais precisa.
