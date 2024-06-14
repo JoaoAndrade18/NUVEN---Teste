@@ -30,7 +30,7 @@ Em seguida instale as dependencias com:
 pip install -r requirements.txt
 ```
 
-Com isso, descompacte o arquivo `DATASET.rar`, (utilize o método de sua preferência), certifique-se que o nome da pasta seja DATASET e que tenha 3 pastas dentro dela.
+Com isso, descompacte o arquivo `DATASET.rar`, (utilize o método de sua preferência), certifique-se de definir o caminho no arquivo `face_classificator.py` e que esteja completo.
 
 Caso queira mudar algo no diretório das imagens em `DATASET` ou o nome em si, modifique o arquivo `face_classificator.py`
 

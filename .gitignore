@@ -1,5 +1,5 @@
 src/*.csv
 facial_recognit-venv
 DATASET
-Obsavacoes
+Obsavacoes.txt
 __pycache__
