@@ -5,7 +5,7 @@ Creaded by: João B. Andrade
 import cv2
 import os
 import pandas as pd
-from face_captinos import roi_caption, image_caption
+from face_captions import roi_caption, image_caption
 
 DATASET_PATH = "..\\DATASET" # defina o caminho extraido do DATASET.rar
 
