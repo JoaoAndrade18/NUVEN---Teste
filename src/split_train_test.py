@@ -20,6 +20,7 @@ def split_train_test():
 
     # Dividir em 80% treino e 20% teste
     X_train, X_test, Y_train, Y_test = train_test_split(
-        X, Y, test_size=0.2, random_state=42
+        X, Y, test_size=0.2, random_state=42 
+        # modifique o test_size para mudar a proporção
     )
     return X_train, X_test, Y_train, Y_test

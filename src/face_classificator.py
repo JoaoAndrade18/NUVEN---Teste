@@ -7,7 +7,7 @@ import os
 import pandas as pd
 from define_labels_face import roi_caption, image_caption
 
-DATASET_PATH = "..\\DATASET" # defina o caminho do DATASET.rar
+DATASET_PATH = "..\\DATASET" # defina o caminho extraido do DATASET.rar
 
 
 # Função para criar um arquivo csv com as coordenadas das faces
@@ -21,7 +21,7 @@ def detect_faces_haar(img_path, face_cascade):
     face_coordinates = []
 
     img = cv2.imread(img_path)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) # tranforma em cinza
 
     # Essa função vai permitir detectar faces em diferentes escalas
     # por isso precisa de um valor de escala e um valor de vizinhos
@@ -57,7 +57,6 @@ def main():
 
     # Lista de caminhos para as pastas com imagens
     # por se tratar de uma pasta com pastas
-
     image_folders = ["chupeta", "roendo_unha", "dedo_na_boca"]
 
     # Lista para armazenar as coordenadas, path e labels
@@ -69,6 +68,8 @@ def main():
         for filename in os.listdir(path):
             img_path = os.path.join(path, filename)
             detected_img, coordinates = detect_faces_haar(img_path, face_cascade)
+
+            # percorre todas as imagens e mostra na tela com as faces detectadas
             cv2.imshow("img", detected_img)
             cv2.waitKey(0)
             face_coordinates.extend(coordinates)
