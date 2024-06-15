@@ -24,3 +24,4 @@ def split_train_test():
         # modifique o test_size para mudar a proporção
     )
     return X_train, X_test, Y_train, Y_test
+

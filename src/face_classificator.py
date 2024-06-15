@@ -7,8 +7,8 @@ import os
 import pandas as pd
 from face_captions import roi_caption, image_caption
 
-DATASET_PATH = "..\\DATASET" # defina o caminho extraido do DATASET.rar
-
+DATASET_PATH = "../DATASET" # defina o caminho extraido do DATASET.rar
+# se tiver seguido as indicações, não modifique 
 
 # Função para criar um arquivo csv com as coordenadas das faces
 def create_csv_file(face_coordinates):
@@ -77,7 +77,3 @@ def main():
         cv2.destroyAllWindows()
 
     create_csv_file(face_coordinates)
-
-
-if __name__ == "__main__":
-    main()
